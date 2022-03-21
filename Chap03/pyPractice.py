@@ -92,11 +92,12 @@ from random import randint
 print("10. 0~50 사이의 임의의 원소 500개 생성")
 list1 = [randint(0,50) for kk in range(500)]
 list2 = [0 for kk in range(51)]
+
 listKey = []
 listValue = []
 for kk in list1:    #원소의 중복수를 알아내는 구문
     list2[kk] += 1
-
+print(list2)
 for kk, jj in enumerate(list2):
     if kk < 3:
         listKey.append(kk)
