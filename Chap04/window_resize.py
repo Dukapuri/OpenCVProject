@@ -5,7 +5,7 @@ image = np.zeros((200,300), np.uint8)
 image.fill(255)
 
 title1, title2 = 'AUTOSIZE','NORMAL'
-cv2.namedWindow(title1, cv2.WINDOW_AUTOSIZE)
+cv2.namedWindow(title1, cv2.WINDOW_AUTOSIZE)  #윈도우 생성- 크기변경 불가
 cv2.namedWindow(title2, cv2.WINDOW_NORMAL)
 
 cv2.imshow(title1, image)

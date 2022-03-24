@@ -17,8 +17,8 @@ cv2.namedWindow('Keyboard Event')
 cv2.imshow("Keyboard Event", image)
 
 while True:
-    key = cv2.waitKeyEx(100)
-    if key == 27: break
+    key = cv2.waitKeyEx(100)    #100ms 동안 키 이벤트 대기
+    if key == 27: break         #ESC키가 들어오면 종료
 
     try:
         result = switch_case[key]

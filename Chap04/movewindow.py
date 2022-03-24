@@ -5,9 +5,9 @@ image = np.zeros((200,400), np.uint8)
 image[:] = 200
 
 title1, title2 = 'Position1','Position2'
-cv2.namedWindow(title1,cv2.WINDOW_AUTOSIZE)
+cv2.namedWindow(title1,cv2.WINDOW_AUTOSIZE)   #윈도우 생성 및 크기 조정 옵션
 cv2.namedWindow(title2)
-cv2.moveWindow(title1,150,150)
+cv2.moveWindow(title1,150,150)  #윈도우 위치 지정
 cv2.moveWindow(title2,400,50)
 
 cv2.imshow(title1,image)
