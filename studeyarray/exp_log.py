@@ -23,4 +23,4 @@ print()
 
 print("[log] =", v_log.T)
 print("[sqrt] =", np.ravel(m_sqrt))
-# print("[pow] =", pow.flatten())
+print("[pow] =", m_pow.flatten())
