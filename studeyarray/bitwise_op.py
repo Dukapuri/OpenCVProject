@@ -4,6 +4,7 @@ import cv2
 image1 = np.zeros((300,300), np.uint8)
 image2 = image1.copy()
 
+print(f"image : {image1.shape[:2]}")
 h, w = image1.shape[:2]
 cx, cy = w//2, h//2
 cv2.circle(image1, (cx,cy), 100, 255, -1)

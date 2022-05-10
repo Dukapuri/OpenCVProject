@@ -18,6 +18,7 @@ low = search_value_idx(hist, 0) * bin_width
 high = search_value_idx(hist, bsize[0] - 1) * bin_width
 
 idx = np.arange(0,256)
+print(idx)
 idx = (idx - low) / (high - low) * 255
 idx[0:int(low)] = 0
 idx[int(high + 1):] = 255

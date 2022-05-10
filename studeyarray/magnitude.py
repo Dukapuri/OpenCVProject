@@ -7,7 +7,7 @@ mag = cv2.magnitude(x,y)
 ang = cv2.phase(x,y)
 
 p_mag, p_ang = cv2.cartToPolar(x, y)
-x2, y2 = cv2.polarToCart(p_mag,p_ang)
+x2, y2 = cv2.polarToCart(p_mag, p_ang)
 
 print("[x] 형태: %s 원소: %s" % (x.shape, x))
 print("[mag] 형태: %s 원소: %s" % (mag.shape, mag))

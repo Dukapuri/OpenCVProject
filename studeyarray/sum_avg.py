@@ -1,6 +1,6 @@
 import numpy as np,cv2
 
-image = cv2.imread("images/flip_text.jpg", cv2.IMREAD_COLOR)
+image = cv2.imread("images/flip_text.jpg", cv2.IMREAD_GRAYSCALE)
 if image is None: raise Exception("영상파일 읽기 오류 발생")
 
 mask = np.zeros(image.shape[:2], np.uint8)
